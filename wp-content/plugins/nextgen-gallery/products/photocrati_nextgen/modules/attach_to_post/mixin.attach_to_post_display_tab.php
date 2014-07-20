@@ -232,6 +232,8 @@ class Mixin_Attach_To_Post_Display_Tab extends Mixin
 					$this->object->_displayed_gallery->display_settings,
 					TRUE
 				);
+
+                if(is_null($model)) $model = new \stdClass();
 				
 				$model->settings = $settings;
 			}
