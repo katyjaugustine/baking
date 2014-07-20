@@ -364,10 +364,9 @@ a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	width: 100%;
+  text-align: center;
 	font-size: 18pt;
-	font-family: monospace;
-	margin-left: 250px;
+	font-family: "Courier New", monospace;
 }
 .main-navigation ul {
 	list-style: none;
@@ -419,16 +418,6 @@ a:active {
 /* Small menu */
 .menu-toggle {
 	display: none;
-}
-@media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
-
-	.main-navigation ul {
-		display: none;
-	}
 }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
@@ -680,16 +669,32 @@ object {
 }
 .gallery-caption {}
 
-.leftMenuEnd {
-	position: absolute;
-	top: 215px;
-	left: 120px;
+.site-header {
+  margin-top: 20px;
 }
 
-.rightMenuEnd {
-	position: absolute;
-	top: 215px;
-	right: 120px;
+#main-menu {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;  
+}
+
+#main-menu::before, #main-menu::after {
+  content:"";
+  display: block;
+  position: absolute;
+  top: -25px;
+  
+  width: 124px;
+  height: 102px;
+}
+#main-menu::before {
+  left: -125px;
+  background-image: url('images/leftMenuEnd.png');
+}
+#main-menu::after {
+  right: -125px;
+  background-image: url('images/rightMenuEnd.png');
 }
 
 .byCharity {
@@ -700,19 +705,45 @@ object {
 	margin-left: 3px;
 }
 
-.homeSide {
-	width: 396px;
-	height: 650px;
-	margin-top: 15px;
-	float: right;
-	margin-right: 177px;
-	background-color: #ffffff;
-	color: #bad3cf;
+.site-home {
+  text-align: center;
 }
 
-.homeCake {
-	margin-left: 160px;
-	margin-top: 24px;
+.home-content {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.home-cake {
+  float: left;
+  margin-top: 24px;
+  width: 450px;
+}
+.home-cake img {
+  max-width: 450px;
+}
+
+.home-side {
+	width: 396px;
+	height: 650px;
+	margin-top: 63px;
+	float: left;
+	margin-left: 49px;
+	background-color: #ffffff;
+	color: #bad3cf;
+  border-radius: 16px;
+}
+
+.site-info {
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.site-info a {
+  color: white;
+  text-decoration: none;
 }
 
 .site-gallery .ngg-galleryoverview {
@@ -722,4 +753,20 @@ object {
 .site-gallery .ngg-gallery-thumbnail-box {
   float:none !important;
   display:inline-block;
+}
+
+.entry-footer {
+  position: absolute;
+  right: 0px;
+  padding-right: 20px;
+}
+
+.entry-footer a, .entry-footer a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  min-width: 950px;
+  max-width: 1280px;
 }

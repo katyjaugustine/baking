@@ -12,9 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'baking' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'baking' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'baking' ), 'baking', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<a target="_blank" href="<?php echo esc_url( __( 'http://lvoe.us/') ); ?>"><small>by</small> LVOE</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

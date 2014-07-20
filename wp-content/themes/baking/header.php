@@ -24,18 +24,19 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding" style="text-align:center;">
-			<img src="/baking-in-progress/images/logo.png"/>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"/>
 		</div>
 		
 		<div class="byCharity">
-		    <img src="/baking-in-progress/images/artisan.png"/>
+		    <img src="<?php echo get_template_directory_uri(); ?>/images/artisan.png"/>
 		</div>
 		
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-		<img class="leftMenuEnd" src="/baking-in-progress/images/leftMenuMark.png"/>
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'baking' ); ?></button>
-		<img class="rightMenuEnd" src="/baking-in-progress/images/rightMenuEnd.png"/>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+		    <div id="main-menu">
+                <button class="menu-toggle"><?php _e( 'Primary Menu', 'baking' ); ?></button>
+                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                <div style="clear: both"></div>
+		    </div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
