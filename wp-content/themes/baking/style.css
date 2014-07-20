@@ -367,7 +367,7 @@ a:active {
 	width: 100%;
 	font-size: 18pt;
 	font-family: monospace;
-	margin-left: 255px;
+	margin-left: 250px;
 }
 .main-navigation ul {
 	list-style: none;
@@ -682,8 +682,14 @@ object {
 
 .leftMenuEnd {
 	position: absolute;
-	top: 158px;
+	top: 215px;
 	left: 120px;
+}
+
+.rightMenuEnd {
+	position: absolute;
+	top: 215px;
+	right: 120px;
 }
 
 .byCharity {
@@ -691,21 +697,20 @@ object {
 	font-family: fantasy;
 	text-align: center;
 	font-size: 18pt;
-}
-
-.rightMenuEnd {
-	position: absolute;
-	top: 158px;
-	right: 110px;
+	margin-left: 3px;
 }
 
 .homeSide {
-	width: 200px;
-	height: 200px;
-	background-color: red;
+	width: 396px;
+	height: 650px;
+	margin-top: 15px;
+	float: right;
+	margin-right: 177px;
+	background-color: #ffffff;
+	color: #bad3cf;
 }
 
 .homeCake {
-	margin-left: 130px;
+	margin-left: 160px;
 	margin-top: 24px;
 }
