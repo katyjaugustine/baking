@@ -709,3 +709,12 @@ object {
 	margin-left: 130px;
 	margin-top: 24px;
 }
+
+.site-gallery .ngg-galleryoverview {
+  text-align:center;
+}
+
+.site-gallery .ngg-gallery-thumbnail-box {
+  float:none !important;
+  display:inline-block;
+}
