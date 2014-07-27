@@ -714,6 +714,11 @@ object {
   margin: 0 auto;
 }
 
+.default-content {
+	text-align: center;
+	color: #ffffff;
+}
+
 .home-cake {
   float: left;
   margin-top: 24px;
